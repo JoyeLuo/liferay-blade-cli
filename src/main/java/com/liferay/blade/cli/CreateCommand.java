@@ -132,6 +132,7 @@ public class CreateCommand {
 		projectTemplatesArgs.setClassName(_args.getClassname());
 		projectTemplatesArgs.setContributorType(_args.getContributorType());
 		projectTemplatesArgs.setDestinationDir(dir.getAbsoluteFile());
+		projectTemplatesArgs.setLiferayVersion(_args.getLiferayVersion());
 		projectTemplatesArgs.setHostBundleSymbolicName(_args.getHostBundleBSN());
 		projectTemplatesArgs.setHostBundleVersion(_args.getHostBundleVersion());
 		projectTemplatesArgs.setName(name);

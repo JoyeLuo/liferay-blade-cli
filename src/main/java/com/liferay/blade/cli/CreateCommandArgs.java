@@ -46,6 +46,10 @@ public class CreateCommandArgs extends BaseArgs {
 		return _dir;
 	}
 
+	public String getLiferayVersion() {
+		return _liferayVersion;
+	}
+
 	public String getHostBundleBSN() {
 		return _hostBundleBSN;
 	}
@@ -98,6 +102,12 @@ public class CreateCommandArgs extends BaseArgs {
 
 	@Parameter(description = "The directory where to create the new project.", names = {"-d", "--dir"})
 	private File _dir;
+
+	@Parameter(
+			description = "The version of Liferay to target when creating the project. Available versions are 7.0 and 7.1. (7.0 is default)",
+			names = {"--liferayVersion"}
+	)
+	private String _liferayVersion = "7.0";
 
 	@Parameter(
 		description = "If a new jsp hook fragment needs to be created, provide the name of the host bundle symbolic name. Required for \"-t fragment\".",
